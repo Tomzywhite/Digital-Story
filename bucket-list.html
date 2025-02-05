@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bucket List ❤️</title>
+    <link rel="stylesheet" href="CSS/bucket-list.css">
+</head>
+<body>
+    <header>
+        <h1>Our Bucket List 📜✨</h1>
+        <nav><a href="index.html"><button class="btn-17">
+            <span class="text-container">
+              <span class="text">Go Back</span>
+            </span>
+          </button></a></nav>
+    </header>
+
+
+    <main>
+        <section id="bucket-list">
+            <h2>Things We Want to Do Together</h2>
+            <p>Here's a list of all the exciting things we want to experience together!</p>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+                <p id="progress-text">0% Completed</p>
+            </div>
+
+            <ul id="list-container">
+                <!-- Bucket list items will be dynamically loaded here -->
+            </ul>
+
+            <div class="add-item">
+                <input type="text" id="new-item" placeholder="Add a new bucket list item...">
+                <button id="add-button">Add</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="JavaScript/bucket-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Quiz 💖</title>
+  <link rel="stylesheet" href="CSS/game.css">
+</head>
+<body>
+  <header>
+    <h1>How Well Do You Know Me? 💡</h1>
+    <nav><a href="index.html"><button class="btn-17">
+        <span class="text-container">
+          <span class="text">Go Back</span>
+        </span><h1>How Well Do You Know Me? 💡</h1>
+      </button></a></nav>
+</header>
+
+  <main>
+    <div id="quiz-container">
+      <h2>Answer these questions about us! 😘</h2>
+      <form id="quiz-form">
+        <!-- Question 1 -->
+        <div class="question">
+          <p>1. What do I love most about you? ❤️</p>
+          <label><input type="radio" name="q1" value="Your smile"> Your smile</label>
+          <label><input type="radio" name="q1" value="Your kindness"> Your kindness</label>
+          <label><input type="radio" name="q1" value="Your intelligence"> Your intelligence</label>
+        </div>
+
+        <div class="question">
+          <p>2. What’s one thing I want to do with you in the future? 💍</p>
+          <label><input type="radio" name="q2" value="Travel the world"> Travel the world</label>
+          <label><input type="radio" name="q2" value="Build a family with you"> Build a family with you</label>
+          <label><input type="radio" name="q2" value="Live in our dream home"> Live in our dream home</label>
+        </div>
+
+        <div class="question">
+          <p>3. How long do I think we’ll last? 🕰️</p>
+          <label><input type="radio" name="q3" value="Forever"> Forever</label>
+          <label><input type="radio" name="q3" value="A long time"> A long time</label>
+          <label><input type="radio" name="q3" value="As long as you want us to"> As long as you want us to</label>
+        </div>
+
+        <div class="question">
+          <p>4. What's my dream travel destination? 🌍</p>
+          <label><input type="radio" name="q4" value="Paris"> Paris</label>
+          <label><input type="radio" name="q4" value="Tokyo"> Tokyo</label>
+          <label><input type="radio" name="q4" value="New York"> New York</label>
+        </div>
+        <!-- Submit Button -->
+        <button type="button" onclick="calculateScore()">Submit</button>
+      </form>
+
+        <form action="https://formspree.io/f/mgvoygke" method="POST">
+          <h2>How Well Do You Know Me? 💙</h2>
+        
+          <label>Your Name:</label>
+          <input type="name" name="name" required>
+        
+          <label>When is my birthday?</label>
+          <input type="text" name="birthday" required>
+        
+          <label>What is my favorite color?</label>
+          <input type="text" name="favorite_color" required>
+        
+          <label>What is my biggest fear?</label>
+          <input type="text" name="biggest_fear">
+        
+          <label>What’s my favorite type of music?</label>
+          <input type="text" name="favorite_music">
+        
+          <label>When and how did we first start talking?</label>
+          <textarea name="first_talk"></textarea>
+        
+          <label>What was my first impression of you?</label>
+          <textarea name="first_impression"></textarea>
+        
+          <label>What is one of my favorite memories of us?</label>
+          <textarea name="favorite_memory"></textarea>
+        
+          <label>What’s something I always do that makes you smile?</label>
+          <textarea name="makes_you_smile"></textarea>
+        
+          <label>What song reminds you of me?</label>
+          <input type="text" name="reminder_song">
+        
+          <label>What’s a place You really want to visit with Me?</label>
+          <input type="text" name="dream_trip">
+        
+          <label>What’s something I do when I miss you?</label>
+          <input type="text" name="miss_behavior">
+        
+          <label>How do I express my love the most?</label>
+          <select name="love_language">
+            <option value="words">Words</option>
+            <option value="gifts">Gifts</option>
+            <option value="actions">Actions</option>
+            <option value="quality_time">Quality Time</option>
+            <option value="physical_touch">Physical Touch</option>
+          </select>
+        
+          <label>What’s one big goal I have for the future?</label>
+          <textarea name="big_goal"></textarea>
+        
+          <label>How do I see our future together?</label>
+          <textarea name="future_together"></textarea>
+        
+          <button type="submit">Send</button>
+        </form>
+        
+
+        
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script src="JavaScript/game.js"></script>
+</body>
+</html>
