@@ -26,7 +26,7 @@ function calculateScore() {
 
     // Display result
     let resultText = "";
-    if (score === 3) {
+    if (score === 4) {
         resultText = "Wow! You know me so well! 😍💖";
     } else if (score === 2) {
         resultText = "Pretty good! You're almost there. 😊";
@@ -34,5 +34,5 @@ function calculateScore() {
         resultText = "Haha, we need to talk more! 😂";
     }
 
-    document.getElementById("result").innerHTML = `<h3>${resultText}</h3><p>Your Score: ${score}/3</p>`;
+    document.getElementById("result").innerHTML = `<h3>${resultText}</h3><p>Your Score: ${score}/4</p>`;
 }
