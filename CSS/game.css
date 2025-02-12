@@ -78,24 +78,7 @@ input[type="radio"] {
   transform: scale(1.2);
 }
 
-/* Button Styling */
-button {
-  margin-top: 15px;
-  background: #ff4f5a;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 100%;
-  font-weight: bold;
-}
 
-button:hover {
-  background: #e03e4d;
-}
 
 /* Animations */
 @keyframes fadeIn {
